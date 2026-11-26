@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { background: #F8F5EF; color: #071B33; }
+.btn-gold { @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy transition duration-300 hover:-translate-y-0.5 hover:bg-[#e6c27a] hover:shadow-[0_10px_30px_-8px_rgba(217,174,88,.7)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold; }
+.btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-full border border-gold/70 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-gold hover:text-navy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold; }
+.btn-navy { @apply inline-flex items-center justify-center gap-2 rounded-full bg-navy px-5 py-2.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#0d2a4d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy; }
+.eyebrow { @apply text-xs font-semibold uppercase tracking-[0.3em] text-gold; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
